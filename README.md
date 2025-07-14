@@ -2,17 +2,40 @@
 Sales forecasting using multiple models - Seasonal Naïve, Holt-Winters, ARIMA, SARIMA and Linear Regression Model
 
 ## Project Objective
-Goal: The goal of this project was to apply various quantitative methods, (i.e. Times Series Models and Causal Models) to forecast the sales of the products available in the dataset.
+The goal of this project was to apply a range of quantitative forecasting techniques, including time series and causal models, to predict future product sales. The dataset contained historical sales data with noticeable trends and seasonality, making it an ideal candidate for testing different model types.
 
-- Perform time series analysis to understand the data and trends
-- Use multiple forecasting models on train dataset
-- Finally select the best model to run the test data
+## Key steps in the project included:
 
-Models covered in the notebook include:
-1. Seasonal Naive Model
-2. Holt-Winters Model (Triple Exponential Smoothing)
-3. ARIMA Model and Seasonal ARIMA Models
-4. Linear Regression Model
+Performing time series analysis to explore trends, seasonality, and stationarity
+
+Training multiple forecasting models on the training dataset
+
+Evaluating performance and selecting the best model based on predictive accuracy
+
+## Models Implemented
+To ensure a well-rounded comparison, I implemented several models across different forecasting approaches:
+
+Seasonal Naïve Model - a simple benchmark that assumes seasonal patterns repeat
+
+Holt-Winters Model (Triple Exponential Smoothing) - useful for capturing trend and seasonality
+
+ARIMA and SARIMA Models - flexible statistical models for autocorrelated data
+
+Linear Regression Model - using time and seasonal indicators as predictors
+
+Each model was evaluated using error metrics such as RMSE to assess how well it forecasted unseen data.
 
 ## Conclusion
-We considered different time-series models as well as a regression model for time series forecasting. From our results we saw that the linear regression model outperformed the other time-series models. Therefore, for this dataset we could use a regression model, rather than a time-series model to forecast sales. One of the main assumptions of regression models is that the patterns in the historical data will be repeated in the future, and since our data was highly seasonal and had a linear trend, it made sense why the linear regression model out-performed the other models.
+After testing multiple forecasting techniques, the linear regression model emerged as the most effective in this specific case. The dataset exhibited a clear linear trend and strong seasonality, which the regression model was able to capture effectively through time-based and seasonal features.
+
+This result highlights that even with complex time series data, simpler models can often perform just as well — or even better — when the data structure aligns with their assumptions. In this case, a regression approach not only offered solid performance but also provided a more interpretable and scalable solution.
+
+
+## Repository Contents
+notebooks/ – Jupyter Notebooks containing model development and evaluation
+
+data/ – Placeholder for dataset (not included for privacy/compliance reasons)
+
+results/ – Visualizations and outputs from forecasting models
+
+README.md – Project summary and documentation
