@@ -29,13 +29,3 @@ Each model was evaluated using error metrics such as RMSE to assess how well it 
 After testing multiple forecasting techniques, the linear regression model emerged as the most effective in this specific case. The dataset exhibited a clear linear trend and strong seasonality, which the regression model was able to capture effectively through time-based and seasonal features.
 
 This result highlights that even with complex time series data, simpler models can often perform just as well — or even better — when the data structure aligns with their assumptions. In this case, a regression approach not only offered solid performance but also provided a more interpretable and scalable solution.
-
-
-## Repository Contents
-notebooks/ – Jupyter Notebooks containing model development and evaluation
-
-data/ – Placeholder for dataset (not included for privacy/compliance reasons)
-
-results/ – Visualizations and outputs from forecasting models
-
-README.md – Project summary and documentation
